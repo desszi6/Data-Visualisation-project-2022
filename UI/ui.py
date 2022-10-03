@@ -46,7 +46,7 @@ layout = [  [sg.Text('asd')],
             [sg.Image(source='Data\image.png',size=img.size,key = "-IMAGE-",)],
             [sg.Button('OK'),sg.Button('Cancel')]
             ]
-window = sg.Window(ui_c.MAIN_TITLE,layout,size=(1500,1000)).read()
+window = sg.Window(ui_c.MAIN_TITLE,layout).read()
 
 
 # %%
