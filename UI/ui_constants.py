@@ -1,0 +1,1 @@
+MAIN_TITLE = "FIFA comparison"
