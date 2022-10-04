@@ -1,5 +1,9 @@
 https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database
 
+Please keep requirements.txt up to date
+To install requirements: pip install -r requirements.txt
+
+
 TODO:
 -DataBase class:
     -Load all the data from the .csv
