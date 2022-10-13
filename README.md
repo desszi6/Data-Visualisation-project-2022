@@ -12,7 +12,12 @@ TODO:
         - gives back a player's informations
     -get_filtered_list(**kwarg)
         - gives back a list of IDs or whole rows based on the filter parameters
+    """
+
+-Why do we need preproces_data folder?
+    
 -UI
     -Create proper layout
+
 
 
