@@ -85,7 +85,10 @@ def get_data(paths):
 
     """
     TODO:
-    Why do we need preproces_data folder?
+    Make
+    https://www.tutorialspoint.com/How-can-I-create-a-directory-if-it-does-not-exist-using-Python
+    os.path.exists(path)
+    os.makedirs(path)
     """
 
 
