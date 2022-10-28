@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 from PIL import Image
 import requests
 
@@ -16,7 +16,7 @@ import requests
 # In[24]:
 
 
-fifa_df=pd.read_csv("FIFA21.csv")
+fifa_df=pd.read_csv("Data\FIFA21_official_data.csv")
 fifa_df
 
 

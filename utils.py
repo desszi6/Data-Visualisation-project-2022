@@ -10,6 +10,11 @@ import warnings
 import math
 warnings.filterwarnings('ignore')
 from pathlib import Path
+from urllib.request import Request, urlopen
+import seaborn as sns
+#get_ipython().run_line_magic('matplotlib', 'inline')
+from PIL import Image
+import requests
 
 
 def convert_currency(value):
@@ -106,3 +111,9 @@ def get_data(paths):
     df[df['Source'] == str(2021)].to_csv(str(paths)+str('/Preprocessed Data/DF21.csv'))
     df[df['Source'] == str(2022)].to_csv(str(paths)+str('/Preprocessed Data/DF22.csv'))
     return df
+
+def get_photo(url):
+    request = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    image = Image.open(urlopen(request))
+    image.show()
+    

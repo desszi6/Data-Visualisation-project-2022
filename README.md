@@ -5,22 +5,9 @@ To install requirements: pip install -r requirements.txt
 
 
 TODO:
--DataBase class:
-    -Load all the data from the .csv
-    -Do all the preprocessing
-    -get_player_data()
-        - gives back a player's informations
-    -get_filtered_list(**kwarg)
-        - gives back a list of IDs or whole rows based on the filter parameters
-    """
-
--Why do we need preproces_data folder?
-    https://www.tutorialspoint.com/How-can-I-create-a-directory-if-it-does-not-exist-using-Python
-    os.path.exists(path)
-    os.makedirs(path)
-    
--UI
-    -Create proper layout
+https://realpython.com/pysimplegui-python/
+Do the layout before Tuesday - Tamas
+Another meeting on Tuesday(01.Nov) at 9.00 @BIRC
 
 
 
