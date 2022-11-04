@@ -111,7 +111,13 @@ def get_data(paths):
     df[df['Source'] == str(2021)].to_csv(str(paths)+str('/Preprocessed Data/DF21.csv'))
     df[df['Source'] == str(2022)].to_csv(str(paths)+str('/Preprocessed Data/DF22.csv'))
     return df
-
+    """
+    TODO:
+    Make
+    https://www.tutorialspoint.com/How-can-I-create-a-directory-if-it-does-not-exist-using-Python
+    os.path.exists(path)
+    os.makedirs(path)
+    """
 def get_photo(url):
     request = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     image = Image.open(urlopen(request))

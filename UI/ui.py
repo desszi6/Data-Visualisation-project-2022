@@ -4,14 +4,16 @@ import PySimpleGUI as sg
 from PIL import Image,ImageTk
 import numpy as np
 import os
+import random
 #internal imports
 import ui_constants as ui_c
+from utils import get_data
 
 
 """
 IMPORT PREPROCESSED DATA HERE
 """
-#DataBase = loadDataBase()
+DataBase = get_data("E:\98_GitRepo\02_DataVis\Data-Visualisation-project-2022\Data")
 
 """ Variables used from .csv
 ID	Name	Age	Photo	Nationality	Flag	Overall	Potential	Club	Club Logo
@@ -71,5 +73,37 @@ layout = [  [sg.Text('asd')],
 """
 window = sg.Window(ui_c.MAIN_TITLE,layout).read()
 
+#While loop for panel
+while True:
+    event,values = window.read()
 
-# %%
+    #example event:
+    #if event == sg.event_you_want
+    #   things happen here
+    
+    #put events here:
+    if event == sg.
+
+    #close the layout
+    if event == sg.WIN_CLOSED or event == 'Exit':
+            break
+
+def choose_random_player(df):
+    while True:
+        random_id=random.randint(0,len(df))
+        if (df['Overall'].loc(random_id) >= 80) or (df['Position'] != 'GK'):
+            break
+    random_player=df.loc(random_id)
+    return random_player
+def load_player2layout(layoutH,df):
+    player = choose_random_player(df)
+    #country name
+    layoutH["-NAT-"].update(player[''])
+    #club names
+    layoutH["-CLUB-"].update()
+    #overall
+    layoutH["-OVR-"].update()
+    #Position
+    layoutH['-POS-'].update()
+
+
